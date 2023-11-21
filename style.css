@@ -1,0 +1,236 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ysabeau', sans-serif;
+}
+header{
+    display: flex;
+    width: 80%;
+    float: right;
+    justify-content: space-between;
+    font-size: x-large;
+    background-color: white;
+}
+
+nav{
+    width: 80%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+header div{
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    font-size: large;
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+.background-image{
+    height: auto;
+}
+
+.background-image img{
+    width: 100%;
+    height: 100%;
+    /* height: 100vh; */
+}
+
+.main-text{
+    background-color: rgba(255, 147, 147, 0.334);
+    position: absolute;
+    top: 40%;
+    left: 100px;
+    padding: 20px 50px;
+    width: 500px;
+}
+
+.main-text div{
+    color: white;
+    width: 450px;
+}
+
+.main-text h1{
+    font-size:40px;
+}
+
+.main-text p{
+    font-size: 20px;
+}
+
+
+.order-now-div{
+    padding: 40px 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255,106,193,1) 0%, rgba(255,162,143,1) 50%, rgba(255,217,94,1) 100%);
+}
+
+.order-now-heading{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 80px 0 30px 0;
+}
+
+.items-list-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.items-list{
+    display: flex;
+    justify-content: center;
+    /* width: 80%; */
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.food-card{
+    border-radius: 0 50px 0 50px;
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.food-card img{
+    width: 100%;
+    height: 250px;
+    border-radius: 0 50px 0 0;
+}
+
+.food-card h3{
+    line-height: 5px;
+}
+
+.order-now-btn-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.order-now-btn{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.499);
+    padding: 20px 50px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 800;
+    font-size:larger ;
+}
+
+@media only screen and (max-width: 950px){
+    header{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    header{
+        padding: 5px;
+    }
+
+    .hamburger-menu{
+        display: block;
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+
+    .menu-bar{
+        position: absolute;
+        z-index: 100;
+    }
+
+    .hamburger-nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100vh;
+        z-index: 10;
+        background: linear-gradient(90deg, rgba(255,106,193,1) 0%, rgba(255,162,143,1) 50%, rgba(255,217,94,1) 100%);
+        transition: all 0.5;
+        overflow: hidden;
+    }
+
+    .hamburger-nav ul{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-left: 30px;
+        gap: 10px;
+    }
+
+    .burger-open{
+        display: block;
+        width: 100%;
+        color: white;
+        overflow: hidden;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    .main-text{
+        padding: 20px 10px;
+        width: 350px;
+        left: 40px;
+    }
+
+    .main-text div{
+        color: white;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 640px){
+
+    .main-text{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        top: 20%;
+        padding:0;
+        background-color: transparent;
+    }
+
+    .main-text div{
+        color: white;
+        width: 90%;
+        background-color: rgba(255, 147, 147, 0.334);
+    }
+    
+    .main-text h1{
+        font-size:24px;
+    }
+    
+    .main-text p{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .main-text{
+        top: 15%;
+    }
+}
